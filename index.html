@@ -70,7 +70,7 @@
         <div class="hero-overlay">
           <div class="container">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="button" type="button">Замовити послугу</button>
+            <button class="button" type="button" data-modal-open>Замовити послугу</button>
           </div>
         </div>
       </section>
@@ -136,24 +136,25 @@
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="activity-items">
-            <div class="acyivity-thumb">
-              <li class="activity-item">
+            <li class="activity-item">
+              <div class="acyivity-thumb">
                 <img src="imeges/programming.jpg" alt="Розробка програмування" width="370" />
                 <p class="activity-article">Десктопні додатки</p>
-              </li>
-            </div>
-            <div class="acyivity-thumb">
-              <li class="activity-item">
+              </div>
+            </li>
+            <li class="activity-item">
+              <div class="acyivity-thumb">
                 <img src="imeges/applications.jpg" alt="Робота над додатками" width="370" />
                 <p class="activity-article">Мобільні додатки</p>
-              </li>
-            </div>
-            <div class="acyivity-thumb">
-              <li class="activity-item">
+              </div>
+            </li>
+
+            <li class="activity-item">
+              <div class="acyivity-thumb">
                 <img src="imeges/designsites.jpg" alt="Палітра кольорів дизайну" width="370" />
                 <p class="activity-article">Дизайнерські рішення</p>
-              </li>
-            </div>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -434,6 +435,15 @@
         </div>
       </footer>
     </main>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>
+          <svg class="modal-icon" width="18" height="18">
+            <use href="./imeges/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
