@@ -604,6 +604,7 @@ img {
 
 .portfolio-link {
   display: block;
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .portfolio-link:hover,
